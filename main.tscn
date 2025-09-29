@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bvwi0hp327p57" path="res://asprite/bird3.svg" id="3_lquwl"]
 [ext_resource type="Texture2D" uid="uid://bxjf3km7ybj2h" path="res://asprite/uparrow.svg" id="5_7mycd"]
 [ext_resource type="Texture2D" uid="uid://gx3tf4l7njxh" path="res://asprite/newbackground.svg" id="5_lquwl"]
-[ext_resource type="Texture2D" uid="uid://d1nx1khxwmwub" path="res://asprite/pipetop5.svg" id="9_4c57u"]
+[ext_resource type="Texture2D" uid="uid://b47coe327cb3m" path="res://asprite/pipetop9.svg" id="8_5vw27"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7mycd"]
 size = Vector2(14.8235, 15.7647)
@@ -97,7 +97,7 @@ scale = Vector2(5.08594, 5.08594)
 texture = ExtResource("5_lquwl")
 metadata/_edit_lock_ = true
 
-[node name="pipe" type="Area2D" parent="."]
+[node name="pipe" type="StaticBody2D" parent="."]
 texture_filter = 1
 position = Vector2(323, -139)
 scale = Vector2(5, 5)
@@ -105,8 +105,8 @@ scale = Vector2(5, 5)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="pipe"]
 shape = SubResource("RectangleShape2D_efxa6")
 
-[node name="Sprite2D" type="Sprite2D" parent="pipe"]
-texture = ExtResource("9_4c57u")
+[node name="pipesprite" type="Sprite2D" parent="pipe"]
+texture = ExtResource("8_5vw27")
 
 [node name="killzone1" type="StaticBody2D" parent="."]
 texture_filter = 1
