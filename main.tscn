@@ -73,6 +73,17 @@ text = "by Guy"
 vertical_alignment = 1
 metadata/_edit_lock_ = true
 
+[node name="score" type="Label" parent="."]
+z_index = 1
+offset_left = 473.0
+offset_top = 39.0
+offset_right = 898.0
+offset_bottom = 115.0
+theme_override_font_sizes/font_size = 55
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+
 [node name="presstoplay" type="Label" parent="."]
 z_index = 1
 offset_top = 160.0
@@ -124,14 +135,3 @@ scale = Vector2(5, 5)
 
 [node name="killzone2" type="CollisionShape2D" parent="killzone2"]
 shape = SubResource("RectangleShape2D_efxa6")
-
-[node name="score" type="Label" parent="."]
-z_index = 1
-offset_left = 708.0
-offset_top = 63.0
-offset_right = 1133.0
-offset_bottom = 139.0
-theme_override_font_sizes/font_size = 55
-text = "0"
-horizontal_alignment = 2
-vertical_alignment = 1
